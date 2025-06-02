@@ -1,0 +1,38 @@
+.centrar_texto{
+            text-align: center;
+}
+body{
+    background-image: url(https://scontent-scl2-1.xx.fbcdn.net/v/t39.30808-6/471196963_1121110536036993_4360285035606565912_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFPxsyOreb8ShoaKP5MQUIBwOZddZqsUvXA5l11mqxS9eIsB9LUCvKHmb_NQui4xI4--aHAu5LHmAYiBKc-UOF6&_nc_ohc=T3XiMF6d_JgQ7kNvwF3BIrv&_nc_oc=Adk6-_YVBf8tV9tWZ_DJdiLGEfkEh_cjXhH45auv4X-bMuKhaptjCc6DyC4Kl94NGjk&_nc_zt=23&_nc_ht=scontent-scl2-1.xx&_nc_gid=fjDx4DXy7mD6SjPav8p2gQ&oh=00_AfK2axRdXH4NWS12LhYkrLgHXzcf9cIzsWcmZCRbI1zozA&oe=68402390);
+    background-size: cover;
+}
+
+h1{
+    font-family: "Lucida Sans","Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
+    color: rgb(80, 65, 46);
+}
+
+p{
+    color:rgb(36, 35, 35);
+}
+
+p{
+    font-family: "Lucida Sans";
+}
+
+.recuadro-bonito {
+    opacity: 0.75;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width:   20%; /* Ocupa el 80% del contenedor */
+    max-width: 300px; /* Máximo 600px de ancho */
+    margin: 20px auto; /* Centrado y con margen */
+}
+
+.recuadro-bonito:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
