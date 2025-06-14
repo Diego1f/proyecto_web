@@ -1,38 +1,99 @@
-.centrar_texto{
-            text-align: center;
-}
-body{
-    background-image: url(https://scontent.fscl38-1.fna.fbcdn.net/v/t39.30808-6/471196963_1121110536036993_4360285035606565912_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFPxsyOreb8ShoaKP5MQUIBwOZddZqsUvXA5l11mqxS9eIsB9LUCvKHmb_NQui4xI4--aHAu5LHmAYiBKc-UOF6&_nc_ohc=pEEh1rTUaJMQ7kNvwFIevlr&_nc_oc=Adnw6FuHJIOga3sEn_qFnfrbMabMYi5AeOH2rfC-uB2NQbWy4ED26qDDCBTsJJE91RE&_nc_zt=23&_nc_ht=scontent.fscl38-1.fna&_nc_gid=Wgo1rmVshiF01BQ2lwCd6A&oh=00_AfMymnuPnkvhWv2cB0pPYGe7aSyGHwqvmP_FK_mPwjebgQ&oe=68514710);
+/* Estilo fondo */
+body {
+    background-image: url(imagenes/Gavin_drum.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Lucida Sans", sans-serif;
 }
 
-h1{
-    font-family: "Lucida Sans","Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
-    color: rgb(88, 79, 68);
+body {
+    display: block; /
 }
 
-p{
-    color:rgb(36, 35, 35);
+header, .main-content, .footer {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto; 
 }
 
-p{
-    font-family: "Lucida Sans";
-}
-
-.recuadro {
-    opacity: 0.75;
-    border: none;
-    border-radius: 8px;
+.centrar_texto {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
     padding: 20px;
-    background: rgb(229, 229, 227);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    width:   %; /* Ocupa el 80% del contenedor */
-    max-width: 600px; /* Máximo 600px de ancho */
-    margin: 20px auto; /* Centrado y con margen */
+}
+
+/* Estilo titulos */
+h1 {
+    font-family: "Lucida Sans", "Lucida Grande", sans-serif;
+    color: rgb(235, 157, 62);
+    font-size: 5rem;
+    margin-bottom: 30px;
+    text-shadow: 5px 4px 2.5px rgba(0, 0, 0, 0.3);
+}
+
+/* Recuadro */
+.recuadro {
+    opacity: 0.9;
+    border-radius: 12px;
+    padding: 25px;
+    background: rgba(229, 229, 227, 0.85); /*Fondo semi-transparente*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px); /*Efecto vidrio*/
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
 }
 
 .recuadro:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+/* Estilo Parrafos*/
+p {
+    color: rgb(36, 35, 35);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/*Estilo enlaces*/
+a {
+    color: #5a4f3d;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #5a4f3d;
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: #7a6b52;
+    border-bottom-color: #7a6b52;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    padding: 20px;
+}
+
+.footer {
+    color: white;
+    bottom: 0;
+    width: 100%;
+    font-family: "Lucida Sans", sans-serif;
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255); 
+}
+/* Formato imagenes recuadros*/
+.img-baterista {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
