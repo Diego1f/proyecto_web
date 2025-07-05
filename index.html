@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drum Masters</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
 </head>
 <body>
@@ -155,6 +156,37 @@
                     rel="noopener noreferrer">
                     Ver aquí
                 </a>
+        </section>
+
+        <section class="recuadro">
+            <h2>¿Quién es tu baterista favorito?</h2>
+            <form id="formFavorito">
+                <label for="nombre">Tu nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"><br><br>
+
+                <label for="correo">Tu correo:</label><br>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com"><br><br>
+
+                <label for="baterista">Elige un baterista:</label><br>
+                <select id="baterista" name="baterista">
+                <option value="">-- Selecciona uno --</option>
+                <option value="John Bonham">John Bonham</option>
+                <option value="Keith Moon">Keith Moon</option>
+                <option value="Jeff Porcaro">Jeff Porcaro</option>
+                <option value="Neil Peart">Neil Peart</option>
+                <option value="Stewart Copeland">Stewart Copeland</option>
+                <option value="Nick Mason">Nick Mason</option>
+                <option value="Gavin Harrison">Gavin Harrison</option>
+                <option value="Mike Portnoy">Mike Portnoy</option>
+                <option value="Tim Alexander">Tim Alexander</option>
+                <option value="Matt Cameron">Matt Cameron</option>
+                </select><br><br>
+
+                <button type="submit">Enviar</button>
+                <p id="mensajeError" style="color: red;"></p>
+            </form>
+
+            <div id="resultados"></div>
         </section>
     
         <!-- Footer -->
